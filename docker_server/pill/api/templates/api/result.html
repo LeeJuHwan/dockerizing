@@ -1,0 +1,19 @@
+{% extends 'base.html' %}
+{% block content %}
+
+<table>
+    <tr>
+        <th>ID</th>
+        <th>File Path</th>
+        <th>Upload Date & Time</th>
+    </tr>
+    {% for inf in 정보 %}
+        <tr>
+            <td>{{ inf.id }}</td>
+            <td>{{ inf.save_files }}</td>
+            <td>{{ inf.pub_date }}</td>
+        </tr>
+    {% endfor %}
+</table>
+
+{% endblock content %}
